@@ -13,7 +13,7 @@ body {
 #next-bday-note  {
   background: rgba(255,255,255,0.85);
   border-radius: 12px;
-  padding: 10px 24px;
+  padding: 10px 2px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   font-weight: 600;
   font-size: 2rem;
@@ -148,7 +148,7 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .eight svg {
@@ -239,39 +239,53 @@ body {
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
-    left: 40%;
+    right: 50%;
+  }
+  #next-bday-note{
+    margin-top:-10%;
   }
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
-    left: 37%;
+    right: 50%;
+  }
+  #next-bday-note{
+    margin-top: -15%;
   }
 }
 
 @media screen and (max-height: 700px) {
   .six .hat {
-    left: 32%;
+    right: 50%;
+  }
+  #next-bday-note{
+    margin-top:-15%;
   }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
-    left: 32%;
+    right: 50%;
+  }
+  #next-bday-note{
+    margin-top: -30%;
   }
 }
 
 @media screen and (max-width: 500px) {
   .container {
-    width: 90%;
+    width: 100%;
   }
-
+  #next-bday-note{
+    margin-top:-40%;
+  }
   .four .text-box {
     width: 90%;
   }
 
   .text-box .fake-btn {
-    bottom: -38px;
+    bottom: -50px;
     right: 5px;
   }
 
